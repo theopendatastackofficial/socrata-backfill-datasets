@@ -1,0 +1,26 @@
+# ignore secrets, virtual environments and typical python compilation artifacts
+secrets.toml
+# ignore basic python artifacts
+.env
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+# ignore duckdb
+*.wal
+# ignore directories for data, tools, logs, and temporary files
+data/
+dagster.yaml
+tools/
+mta/logs/
+mta/transformations/dbt/target/
+mta/transformations/dbt/.user.yml
+EDA/
+dagster_logs/
+.venv/
+.vscode/
+codeprinter/
+datatest/
+testing/
+metadata.db
+mta/mta/transformations/dbt/logs/
+node_modules

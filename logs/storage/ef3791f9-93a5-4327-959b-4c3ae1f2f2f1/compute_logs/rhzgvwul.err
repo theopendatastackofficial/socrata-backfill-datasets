@@ -1,0 +1,112 @@
+[32m2025-03-02 16:30:48 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - 1634132 - LOGS_CAPTURED - Started capturing logs in process (pid: 1634132).
+[32m2025-03-02 16:30:48 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - 1634132 - mta_subway_hourly_ridership - STEP_START - Started execution of step "mta_subway_hourly_ridership".
+[32m2025-03-02 16:31:57 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 1, offset=0
+[32m2025-03-02 16:31:57 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 1 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=03/mta_subway_hourly_ridership_202203_1.parquet
+[32m2025-03-02 16:32:34 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 2, offset=500000
+[32m2025-03-02 16:32:34 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 2 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=03/mta_subway_hourly_ridership_202203_2.parquet
+[32m2025-03-02 16:33:03 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 3, offset=1000000
+[32m2025-03-02 16:33:03 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 3 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=03/mta_subway_hourly_ridership_202203_3.parquet
+[32m2025-03-02 16:33:51 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 4, offset=1500000
+[32m2025-03-02 16:33:51 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 4 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=03/mta_subway_hourly_ridership_202203_4.parquet
+[32m2025-03-02 16:33:57 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 104114 rows => Writing chunk 5, offset=2000000
+[32m2025-03-02 16:33:57 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 5 (104114 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=03/mta_subway_hourly_ridership_202203_5.parquet
+[32m2025-03-02 16:34:07 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - No more data for mta_subway_hourly_ridership 2022-03 offset=2500000.
+[32m2025-03-02 16:34:37 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 1, offset=0
+[32m2025-03-02 16:34:37 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 1 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=04/mta_subway_hourly_ridership_202204_1.parquet
+[32m2025-03-02 16:35:12 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 2, offset=500000
+[32m2025-03-02 16:35:12 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 2 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=04/mta_subway_hourly_ridership_202204_2.parquet
+[32m2025-03-02 16:35:58 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 3, offset=1000000
+[32m2025-03-02 16:35:58 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 3 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=04/mta_subway_hourly_ridership_202204_3.parquet
+[32m2025-03-02 16:36:26 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 4, offset=1500000
+[32m2025-03-02 16:36:26 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 4 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=04/mta_subway_hourly_ridership_202204_4.parquet
+[32m2025-03-02 16:36:29 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 31557 rows => Writing chunk 5, offset=2000000
+[32m2025-03-02 16:36:29 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 5 (31557 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=04/mta_subway_hourly_ridership_202204_5.parquet
+[32m2025-03-02 16:36:33 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - No more data for mta_subway_hourly_ridership 2022-04 offset=2500000.
+[32m2025-03-02 16:36:49 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 1, offset=0
+[32m2025-03-02 16:36:49 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 1 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=05/mta_subway_hourly_ridership_202205_1.parquet
+[32m2025-03-02 16:37:35 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 2, offset=500000
+[32m2025-03-02 16:37:35 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 2 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=05/mta_subway_hourly_ridership_202205_2.parquet
+[32m2025-03-02 16:39:13 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 3, offset=1000000
+[32m2025-03-02 16:39:13 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 3 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=05/mta_subway_hourly_ridership_202205_3.parquet
+[32m2025-03-02 16:39:40 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 4, offset=1500000
+[32m2025-03-02 16:39:40 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 4 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=05/mta_subway_hourly_ridership_202205_4.parquet
+[32m2025-03-02 16:40:49 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 95321 rows => Writing chunk 5, offset=2000000
+[32m2025-03-02 16:40:49 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 5 (95321 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=05/mta_subway_hourly_ridership_202205_5.parquet
+[32m2025-03-02 16:40:51 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - No more data for mta_subway_hourly_ridership 2022-05 offset=2500000.
+[32m2025-03-02 16:41:33 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 1, offset=0
+[32m2025-03-02 16:41:33 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 1 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=06/mta_subway_hourly_ridership_202206_1.parquet
+[32m2025-03-02 16:42:20 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 2, offset=500000
+[32m2025-03-02 16:42:20 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 2 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=06/mta_subway_hourly_ridership_202206_2.parquet
+[32m2025-03-02 16:43:02 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Fetched 500000 rows => Writing chunk 3, offset=1000000
+[32m2025-03-02 16:43:02 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - mta_subway_hourly_ridership - Writing batch 3 (500000 rows) to /home/christiandata/socrata-backfill-datasets/data/opendata/mta_subway_hourly_ridership/year=2022/month=06/mta_subway_hourly_ridership_202206_3.parquet
+[32m2025-03-02 16:49:19 -0500[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - ef3791f9-93a5-4327-959b-4c3ae1f2f2f1 - 1634132 - mta_subway_hourly_ridership - STEP_FAILURE - Execution of step "mta_subway_hourly_ridership" failed.
+
+dagster._core.errors.DagsterExecutionInterruptedError
+
+Stack Trace:
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_plan.py", line 245, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 501, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 190, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 159, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 480, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 127, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/mta/assets/ingestion/mta_assets.py", line 92, in mta_subway_hourly_ridership
+    records = context.resources.socrata.fetch_data(endpoint, query_params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/mta/resources/socrata_resource.py", line 26, in fetch_data
+    resp = requests.get(endpoint, params=query_params, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
+    r.content
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/urllib3/response.py", line 1063, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/urllib3/response.py", line 1222, in read_chunked
+    chunk = self._handle_chunk(amt)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/urllib3/response.py", line 1159, in _handle_chunk
+    value = self._fp._safe_read(amt)  # type: ignore[union-attr]
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/http/client.py", line 638, in _safe_read
+    data = self.fp.read(amt)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/christiandata/socrata-backfill-datasets/.venv/lib/python3.11/site-packages/dagster/_utils/interrupts.py", line 83, in _new_signal_handler
+    raise error_cls()
+[0m
