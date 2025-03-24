@@ -4,7 +4,7 @@ import polars as pl
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from dagster import asset, OpExecutionContext
-from mta.resources.socrata_resource import SocrataResource
+from pipeline.resources.socrata_resource import SocrataResource
 
 def process_crime_df(df: pl.DataFrame) -> pl.DataFrame:
     """

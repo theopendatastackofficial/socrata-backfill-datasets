@@ -7,8 +7,7 @@ import polars as pl
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from dagster import asset, OpExecutionContext
-from mta.constants import BASE_PATH
-from mta.resources.socrata_resource import SocrataResource
+from pipeline.resources.socrata_resource import SocrataResource
 
 
 ##########################################################

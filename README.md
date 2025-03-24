@@ -1,6 +1,6 @@
 # What is this Repo?
 
-This repository serves as a local data platform for ingesting very large datasets from the socrata API:
+This repository serves as a local data platform for ingesting very large datasets from the Socrata API:
 
 # Project Setup Guide
 
@@ -104,15 +104,8 @@ Then, navigate into the repository directory. It is best to do this by using the
 cd socrata-backfill-assets
 ```
 
-```bash
-git clone https://github.com/ChristianCasazza/mtadata custom_name
-```
-
 Then, navigate into the repository directory:
 
-```bash
-cd custom_name
-```
 
 ## 4. Setup the Project
 
@@ -126,7 +119,7 @@ These scripts automate the following tasks:
 3. Ask for your Socrata App Token (`SOCRATA_API_TOKEN`). If no key is provided, the script will use the community key. 
    - **Important**: The community key is shared and rate-limited. Please use your own key if possible. You can obtain one in two minutes by signing up [here](https://evergreen.data.socrata.com/signup) and following [these instructions](https://support.socrata.com/hc/en-us/articles/210138558-Generating-App-Tokens-and-API-Keys).
 4. Copy `.env.example` to `.env` and append `SOCRATA_API_TOKEN` to the file.
-5. Dynamically generate the `LAKE_PATH` variable for your system and append it to `.env`.
+5. Dynamically generate the `WAREHOUSE_PATH` variable for your system and append it to `.env`.
 6. Start the Dagster development server.
 
 ### Run the Setup Script
@@ -190,7 +183,7 @@ con = DuckDBWrapper()
 #### Initialize a persistent DuckDB database
 
 ```python
-con = DuckDBWrapper("my_database.duckdb")
+con = DuckDBWrapper("data.duckdb")
 ```
 
 You can run the rest of the cells to learn how to utilize the class.

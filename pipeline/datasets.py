@@ -1,5 +1,3 @@
-import os
-from mta.constants import BASE_PATH
 
 
 # Partitioned Asset Names
@@ -11,8 +9,3 @@ PARTITIONED_ASSETS_NAMES = [
     "nyc_threeoneone_requests"
 ]
 
-
-PARTITIONED_ASSETS_PATHS = {
-    asset_name: f"{BASE_PATH}/{asset_name}"
-    for asset_name in PARTITIONED_ASSETS_NAMES
-}
