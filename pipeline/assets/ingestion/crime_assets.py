@@ -3,7 +3,7 @@
 import polars as pl
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-from dagster import asset, OpExecutionContext
+from dagster import asset, OpExecutionContext, MetadataValue, Output
 from pipeline.resources.socrata_resource import SocrataResource
 
 def process_crime_df(df: pl.DataFrame) -> pl.DataFrame:
@@ -127,3 +127,73 @@ def crime_nypd_arrests(context: OpExecutionContext):
         f"🏁 Completed backfill: {start_date:%Y-%m-%d} to {end_date:%Y-%m-%d}. Chunks written: {total_chunks}."
     )
     return f"Wrote {total_chunks} chunks"
+
+
+
+@asset(
+    name="test_crime_nyc_arrests_dev",
+    group_name="NYC_Crime_Dev",
+    io_manager_key="medium_socrata_io_manager",
+    required_resource_keys={"medium_socrata_io_manager", "socrata"},
+)
+def test_crime_nyc_arrests_dev(context: OpExecutionContext):
+    """
+    Fetches NYC arrests data using a continuous offset approach, without
+    monthly partitioning. We:
+      1) Start from a minimal date (or no date filter if you want the entire dataset).
+      2) Increase offset by "limit" each time until no more data is returned.
+      3) Write each chunk to a Parquet file in the same folder (no partitioning by date).
+    """
+
+    endpoint = "https://data.cityofnewyork.us/resource/8h9b-rp9u.geojson"
+    asset_name = "test_crime_nyc_arrests_dev"
+    manager = context.resources.medium_socrata_io_manager
+
+    # If you want to start from a specific earliest date, set a where clause:
+    # e.g., arrest_date >= '2013-01-01T00:00:00'
+    # Remove or adjust as needed for your use case.
+    #where_clause = "arrest_date >= '2013-01-01T00:00:00'"
+
+    limit = 50000
+    offset = 0
+    batch_num = 1
+    total_rows = 0
+
+    while True:
+        context.log.info(f"Fetching data at offset={offset}, limit={limit}...")
+
+        query_params = {
+            "$limit": limit,
+            "$offset": offset,
+            "$order": "arrest_date ASC",     # or whichever ordering field is relevant
+           # "$where": where_clause           # optional; remove if not needed
+        }
+
+        records = context.resources.socrata.fetch_data(endpoint, query_params)
+        if not records:
+            context.log.info(f"No more data returned at offset={offset}. Done.")
+            break
+
+        df = pl.DataFrame(records)
+        df= process_crime_df(df)
+        # Optional: If you want to cast columns or do any Polars-based transformations,
+        # you can insert that step here, e.g.: df = process_crime_df(df)
+
+        # Write this chunk as a parquet file, all in one folder
+        manager.write_chunk(asset_name, batch_num, df)
+
+        rows_in_chunk = df.shape[0]
+        total_rows += rows_in_chunk
+        context.log.info(f"💾 Wrote batch {batch_num} ({rows_in_chunk} rows).")
+
+        # Clean up
+        del df
+
+        # Prepare for next iteration
+        offset += limit
+        batch_num += 1
+
+    context.log.info(
+        f"✅ Completed ingestion. Total rows downloaded: {total_rows} in {batch_num - 1} batches."
+    )
+    return f"Wrote {batch_num - 1} chunks, {total_rows} rows total."

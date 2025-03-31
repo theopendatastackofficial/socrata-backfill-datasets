@@ -47,7 +47,7 @@ class DuckDBWrapper:
             file_extension = p.suffix.lower()
             try:
                 if file_extension == ".parquet":
-                    query = f"CREATE OR REPLACE VIEW {table_name} AS SELECT * FROM read_parquet('{path_str}')"
+                    query = f"CREATE OR REPLACE VIEW {table_name} AS SELECT * FROM read_parquet('{path_str}', union_by_name=True)"
                 elif file_extension == ".csv":
                     query = f"CREATE OR REPLACE VIEW {table_name} AS SELECT * FROM read_csv_auto('{path_str}')"
                 elif file_extension == ".json":
@@ -83,7 +83,7 @@ class DuckDBWrapper:
                 elif file_extension == ".csv":
                     query = f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM read_csv_auto('{path_str}')"
                 elif file_extension == ".json":
-                    query = f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM read_json_auto('{path_str}')"
+                    query = f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM read_json_auto('{path_str}',union_by_name=true)"
                 else:
                     raise ValueError(f"Unsupported file type '{file_extension}' for file: {path_str}")
 

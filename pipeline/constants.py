@@ -16,6 +16,11 @@ DAGSTER_PATH=os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "logs
 
 
 
+NON_PARTITIONED_ASSETS_PATHS = {
+    asset_name: f"{LAKE_PATH}/{asset_name}"
+    for asset_name in NON_PARTITIONED_ASSETS_NAMES
+}
+
 
 
 PARTITIONED_ASSETS_PATHS = {

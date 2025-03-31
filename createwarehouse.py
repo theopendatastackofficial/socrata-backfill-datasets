@@ -5,7 +5,7 @@ from pathlib import Path
 # Add the root of the project to the system path to resolve imports from the pipeline module
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from pipeline.constants import PARTITIONED_ASSETS_PATHS, WAREHOUSE_PATH
+from pipeline.constants import PARTITIONED_ASSETS_PATHS, NON_PARTITIONED_ASSETS_PATHS, WAREHOUSE_PATH
 from pipeline.utils.duckdb_wrapper import DuckDBWrapper
 
 def create_duckdb_and_views():
@@ -29,7 +29,7 @@ def create_duckdb_and_views():
     print(f"New DuckDB file created at {WAREHOUSE_PATH}")
 
     # Register non-partitioned assets
-    non_partitioned = {}
+    non_partitioned = {**NON_PARTITIONED_ASSETS_PATHS}
     if non_partitioned:
         table_names = list(non_partitioned.keys())
         repo_root = os.path.dirname(WAREHOUSE_PATH)  # Use the warehouse's parent dir as repo_root
